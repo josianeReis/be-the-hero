@@ -14,8 +14,16 @@ function Login() {
         <form>
           <h1>Efetuar login</h1>
           <input placeholder="Informe o ID..." />
-          <button type="submit">Entrar</button>
-          <a href="/register"><FiLogIn gIn size={16} color="#E02041"/> Não tenho cadastro</a>
+          <button
+            type="submit"
+            className="button"
+          >
+            Entrar
+          </button>
+          <a href="/register">
+            <FiLogIn gIn size={16} color="#E02041"/>
+            Não tenho cadastro
+          </a>
         </form>
       </section>
       <img src={heroesImg} alt="Heroes" />
