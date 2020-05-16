@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FiLogIn } from 'react-icons/fi';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { FiLogIn } from 'react-icons/fi'
 
-import './styles.css';
+import './styles.css'
 
-import logoImg from '../../assets/logo.svg';
-import heroesImg from '../../assets/heroes.png';
+import logoImg from '../../assets/logo.svg'
+import heroesImg from '../../assets/heroes.png'
 
-function Login() {
+function Login () {
   return (
     <div className="login-container">
       <section className="form">
@@ -32,4 +32,4 @@ function Login() {
   )
 }
 
-export default Login; 
+export default Login
