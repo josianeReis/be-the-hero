@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import logoImg from '../../assets/logo.svg'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 
 import api from '../../services/api'
 import './styles.css'
+
+const history = useHistory();
 
 export default function Register () {
   const [name, setName] = useState('')
@@ -21,6 +23,7 @@ export default function Register () {
     try {
       const response = await api.post('ongs', data);
       alert(`Seu ID de acesso: ${response.data.id}`)
+      history.push('/')
     } catch (error) {
       alert('Erro ao realizar cadastro, por favor tente novamente!')
     }
